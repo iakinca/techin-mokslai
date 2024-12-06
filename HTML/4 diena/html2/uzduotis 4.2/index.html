@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Uzpildykite forma:</h2>
+    <h4>Visi laukai privalomi.</h4>
+    <form>
+      <label for="vardas">Vardas (is didziosios raides)</label>
+      <div>
+        <input
+          type="text"
+          placeholder="vardas"
+          id="vardas"
+          name="vardas"
+          pattern="^[A-Z][a-z]+$"
+          required
+        />
+      </div>
+      <div>
+        <label for="telefonas">Jusu telefono numeris:</label>
+        <br />
+        <input
+          type="text"
+          id="telefonas"
+          placeholder="+370-xxxx-xxxxx"
+          required
+          pattern="^\+370-[0-9]{4}-[0-9]{5}$"
+        />
+      </div>
+      <div>
+        <label for="elpastas">El. pasto adresas:</label>
+        <br />
+        <input
+          type="email"
+          id="elpastas"
+          placeholder="el.p.adresas"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="birthday">Jusu gimimo data:</label>
+        <br />
+        <input
+          type="date"
+          id="birthday"
+          name="birthday"
+          required
+        />
+      </div>
+      <div>
+        <label for="number">Jusu amzius:</label>
+        <br />
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="nuo 18 iki 65 metu"
+          min="18"
+          max="65"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="kodas">Jusu pasto kodas:</label>
+        <br />
+        <input
+          type="text"
+          id="kodas"
+          name="kodas"
+          placeholder="XX-01234"
+          required
+          pattern="^[A-Z]{2}-[0-4]{5}+$"
+        />
+      </div>
+      <div>
+        <h5>Jusu megstamiausia spalva:</h5>
+
+        <input type="color" />
+        <br />
+      </div>
+      <button>Pateikti</button>
+    </form>
+  </body>
+</html>

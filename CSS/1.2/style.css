@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  background-color: rgb(93, 93, 93);
+  color: white;
+}
+span {
+  color: orange;
+}
+header nav {
+  background-color: grey;
+  color: white;
+}
+p > span {
+  color: orangered;
+  letter-spacing: 0.3em;
+}

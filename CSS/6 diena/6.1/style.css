@@ -1,0 +1,19 @@
+.container {
+  width: 400px;
+  border: 2px solid darkslategray;
+  padding: 2em;
+  margin: 5em auto;
+}
+
+/* Nekeisti */
+li.active::before {
+  color: goldenrod;
+}
+
+/* Savo CSS stilius rašyti apačioje */
+li::before {
+  content: "\2606";
+}
+ul {
+  list-style-type: none;
+}

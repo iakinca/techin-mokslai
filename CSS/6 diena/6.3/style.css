@@ -1,0 +1,6 @@
+li:nth-child(4n-1) {
+  background-color: blanchedalmond;
+}
+li:nth-child(3n + 2):hover {
+  background-color: aqua;
+}

@@ -1,0 +1,33 @@
+table,
+tr {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+th {
+  width: 150px;
+}
+thead {
+  background-color: grey;
+}
+th:first-child,
+td:first-child {
+  text-align: left;
+  padding: 3px;
+}
+th:last-child,
+td:last-child {
+  text-align: right;
+  padding: 3px;
+}
+tr:nth-child(even) {
+  background-color: bisque;
+}
+tr:hover {
+  background-color: aqua;
+}
+tr:active {
+  background-color: brown;
+}
+tr {
+  text-align: center;
+}

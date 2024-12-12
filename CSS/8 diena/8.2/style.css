@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(247, 247, 170);
+}
+div {
+  width: 800px;
+  height: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1em;
+}
+.btn {
+  color: white;
+  margin: 10px;
+  font-weight: 600;
+  padding: 12px 32px;
+}
+
+.btn--blue {
+  background-color: blue;
+  border-color: blue;
+}
+.btn--aqua {
+  background-color: aqua;
+  border-color: aqua;
+}
+.btn--green {
+  background-color: green;
+  border-color: green;
+}
+.btn--orange {
+  background-color: orange;
+  border-color: orange;
+}
+.btn--red {
+  background-color: red;
+  border-color: red;
+}
+
+.btn--small-oval {
+  border-radius: 8px;
+}
+.btn--oval {
+  border-radius: 40px;
+}
+.btn--border-blue {
+  border-color: blue;
+}
+.btn--border-green {
+  border-color: green;
+}
+.btn--border-aqua {
+  border-color: aqua;
+}
+.btn--border-orange {
+  border-color: orange;
+}
+.btn--border-red {
+  border-color: red;
+}

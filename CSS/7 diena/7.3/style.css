@@ -4,9 +4,34 @@
   box-sizing: border-box;
 }
 .container {
-  width: 10;
-  padding: 50px;
-  margin-left: 35em;
-  border: 5px solid grey;
+  width: 500px;
+  height: 250px;
+  margin: 60px auto;
+  border: 3px solid grey;
   background-color: white;
+  box-shadow: 5px 5px 5px grey;
+}
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  margin-top: 20px;
+}
+
+img {
+  border-radius: 50%;
+  width: 90px;
+  height: 70px;
+  margin-top: -40px;
+  margin-left: 200px;
+}
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+i {
+  margin-top: 20px;
+  color: orange;
+  margin-left: 60px;
 }

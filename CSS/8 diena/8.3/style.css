@@ -1,0 +1,81 @@
+/* NEIEKO NEKEISTI. Savo CSS kodą rašykite nuo 61-os eilutės. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ccc;
+}
+
+section {
+  /* Matavimo vienetai, tokie kaip milimetrai, taip pat veikia CSS pasaulyje. 
+  Jie yra dažniau naudojami tada, kai darbą norėsime atspausdinti ant lapo 
+  popieriaus.*/
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+/*
+Pagrindinė laiško dalis
+    1. Prijunkite CSS failą prie HTML failo
+    2. Prie laiško pridėkite fono (angl. background) deklaraciją, kurioje:
+        Pritvirtinate top-image.png paveikslėlį prie laiško viršaus
+        Pritvirtinate bottom-image.png prie laiško apačios
+        Pridedate pusiau permatomą gradientą ant abiejų ankstesnių fonų, kuris suteikia laiškui šiek tiek tekstūros. Padarykite jį šiek tiek tamsų prie pat viršaus ir apačios, bet visiškai skaidrų didelėje centro dalyje
+    3. Prie laiško pridėkite baltą fono spalvą
+    4. Laiško viršuje ir apačioje pridėkite 1 mm storio vientisą rėmelį (angl. border), kurio spalva derėtų prie likusios spalvinės paletės
+
+Logotipas
+    1. Į <h1> pridėkite logotipą kaip fono paveikslėlį
+    2. Pridėkite filtrą prie logotipo, suteikdami jam švelnų drop shadow
+*/
+
+/* Savo CSS rašykite žemiau */
+
+h1 {
+  background-image: url(images/logo.png);
+  filter: drop-shadow(5px 5px 10px black);
+  text-shadow: 3px 3px 3px black;
+}
+section {
+  border-top: 1mm solid black;
+  border-bottom: 1mm solid black;
+  border-left: 1mm solid black;
+  border-right: 1mm solid black;
+  background-image: url("images/top-image.png"), url("images/bottom-image.png"),
+    linear-gradient(
+      rgba(227, 218, 218, 0.3),
+      rgba(225, 234, 238, 1),
+      rgba(227, 218, 218, 0.3)
+    );
+  background-position: top 0px left 0px, bottom 0px left 0px;
+  background-repeat: no-repeat;
+  /* background-color: white; */
+}

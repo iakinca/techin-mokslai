@@ -1,6 +1,6 @@
 // 2 uzduotis
 const zuvuKiekis = +prompt("Kiek zuvu gyvena akvariume");
-const idedamaPerDiena
+const idedamaPerDiena = +prompt("Kiek idedama zuvu per diena");
 const dienuKiekis = +prompt("Kiek dienu praejo");
 const result = dienuKiekis * idedamaPerDiena + zuvuKiekis;
 console.log(

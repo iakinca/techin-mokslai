@@ -8,3 +8,6 @@ const result =
   pirmadienis + antradienis + treciadienis + ketvirtadienis + penktadienis;
 console.log("Pamoku skaicius:" + result);
 console.log("Tai sudaro minuciu:" + result * 45);
+
+
+

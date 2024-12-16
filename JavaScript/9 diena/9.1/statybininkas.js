@@ -1,11 +1,12 @@
-const plytuIlgis = 20;
-const plytuAusktis = 10;
-const sienosIlgis = +prompt("Sienos ilgis");
-const sienosAukstis = +prompt("Sienos aukstis");
-const plytosKaina = +prompt("Plytos kaina");
-const sienaCM = (sienosIlgis*sienosAukstis)*100;
-const plytaCm = (20*10)/100;
-const plytuKiekis = sienaCM/plytaCm;
-const plytuKaina = plytuKiekis*plytosKaina
-console.log("Plytu kiekis: " + result); 
-console.log("Plytos kainuos " + result * plytosKaina); 
+
+const sienosIlgis = +prompt("Sienos ilgis metrais");
+const sienosAukstis = +prompt("Sienos aukstis metrais");
+const plytosIlgis = 20;
+const plytosAukstis = 10;
+const plytosKaina = 0.5
+const sienaCM = (sienosIlgis * 100) * (sienosAukstis * 100)
+const plytaCm = plytosIlgis * plytosAukstis
+const plytuKiekis = sienaCM / plytaCm
+const plytuKaina = plytuKiekis * plytuKaina
+console.log('Plytu kiekis: ${plytosKaina}')
+console.log('Plytos kainuos: ${plytuKaina}')

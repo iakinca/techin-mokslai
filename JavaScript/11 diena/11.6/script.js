@@ -1,13 +1,13 @@
 const kaire = document.querySelector("#kaire");
 const desine = document.querySelector("#desine");
-const none = document.querySelector("#paslepti");
+const paslepti = document.querySelector("#paslepti");
 const nukelti = document.querySelector("#nukelti");
 const atstatyti = document.querySelector("#atstatyti");
 
 const img = document.querySelector("img");
 
-// const parent = document.querySelector("body");
-// const p = document.querySelector("#lorem");
+const parent = document.querySelector("body");
+const p = document.querySelector("#lorem");
 
 kaire.addEventListener("click", function () {
   img.style.float = "left";
@@ -17,14 +17,16 @@ desine.addEventListener("click", function () {
   img.style.float = "right";
 });
 
-none.addEventListener("click", function () {
-  img.style.;
+paslepti.addEventListener("click", function () {
+  img.style.visibility = "hidden";
 });
 
 nukelti.addEventListener("click", function () {
-  img.style;
+  parent.appendChild(img);
 });
 
 atstatyti.addEventListener("click", function () {
-  img.style;
+  img.style.visibility = "visible";
+  img.style.float = "none";
+  parent.insertBefore(img, p);
 });

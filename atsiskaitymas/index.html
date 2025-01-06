@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- <div> -->
+      <h1>TravelLT</h1>
+      <nav>
+        <ul>
+          <li>Pradžia</li>
+          <li>Kelionės</li>
+          <li>Kontaktai</li>
+        </ul>
+      </nav>
+      <figure class="menu">
+        <h2>Atraskite savo svajonių kelionę</h2>
+        <br />Aplakykite gražiausias pasaulio vietas
+      </figure>
+      <!-- </div> -->
+    </header>
+    <main>
+      <section>
+        <article>
+          <h3>Populiarios kelionės</h3>
+          <figure class="france">
+            <img
+              src="image/france.jpg"
+              alt="France"
+            />
+          </figure>
+          <h4>Paryžius</h4>
+          <i>Romantiška kelionė į meilės miestą</i>
+          <br />
+          <a href="">nuo 299 Eur</a>
+        </article>
+
+        <article>
+          <figure class="rome">
+            <img
+              src="image/rome.jpg"
+              alt="Rome"
+            />
+          </figure>
+          <h4>Roma</h4>
+          <i>Amžinasis miestas laukia jūsų</i>
+          <br />
+          <a href="">nuo 329 Eur</a>
+        </article>
+
+        <article>
+          <figure class="barselona">
+            <img
+              src="image/dubai.jpg"
+              alt="Barselona"
+            />
+          </figure>
+          <h4>Barselona</h4>
+          <i>Saulėta Katalonijos sostinė</i>
+          <br />
+          <a href="">nuo 279 Eur</a>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h3>Susisiekite su mumis</h3>
+      <form>
+        <div>
+          <label for="vardas">Vardas</label>
+          <br />
+          <input
+            type="text"
+            id="vardas"
+            name="vardas"
+            pattern="^[A-Z][a-z]+$"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">El. paštas:</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            maxlength="100"
+            required
+          />
+        </div>
+        <br />
+        <button>Siųsti</button>
+      </form>
+      <h5>2024 TravelLT. Visos teisės saugomos.</h5>
+    </footer>
+  </body>
+</html>

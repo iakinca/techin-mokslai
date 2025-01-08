@@ -16,3 +16,4 @@ public class Story {
         System.out.println("Perhaps " + name + " will not be " + job + " forever.");
     }
 }
+ 

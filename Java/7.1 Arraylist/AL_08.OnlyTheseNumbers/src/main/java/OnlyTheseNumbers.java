@@ -16,6 +16,13 @@ public class OnlyTheseNumbers {
 
             numbers.add(number);
         }
+        System.out.println("From where?");
+        int from = scanner.nextInt();
+        System.out.println("To where?");
+        int to = scanner.nextInt();
 
+        for (int i = from; i <= to; i++) {
+            System.out.println(numbers.get(i));
+        }
     }
 }

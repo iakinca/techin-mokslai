@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+<<<<<<< HEAD
   <component name="GoogleJavaFormatSettings">
     <option name="enabled" value="true" />
   </component>
+=======
+>>>>>>> f748e616018d5fb70ca8207c7d8b970b0596c948
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -11,5 +14,9 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK" />
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK" />
+>>>>>>> f748e616018d5fb70ca8207c7d8b970b0596c948
 </project>

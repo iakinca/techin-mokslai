@@ -1,7 +1,7 @@
-public class Account extends CheckingAccount {
-    private int id;
-    private double balance;
-    private double annualInterestRate;
+public class Account {
+    private int id = 0;
+    private double balance = 0.0;
+    private double annualInterestRate = 0.0;
     private Date dateCreated;
 
 
@@ -9,7 +9,7 @@ public class Account extends CheckingAccount {
 this.id = id;
 this.balance = balance;
 this.annualInterestRate = 0;
-this.dateCreated = new Date
+this.dateCreated = new dateCreated
 
 
 

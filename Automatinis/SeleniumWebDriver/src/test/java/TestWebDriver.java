@@ -50,7 +50,7 @@ public class TestWebDriver {
         selectCityInput.sendKeys(Keys.ENTER);
 
         driver.findElement(By.id("submit")).click();
-        
+
 
 
     }

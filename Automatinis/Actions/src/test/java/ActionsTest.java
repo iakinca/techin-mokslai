@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -43,4 +44,17 @@ public class ActionsTest {
         actions.moveToElement(hoverButton).perform();
 
     }
+
+    @Test
+    void click() {
+        WebElement clickButton = driver.findElement(By.id("click-box"));
+        Actions actions = new Actions(driver);
+        actions.clickAndHold(clickButton).perform();
+    }
+
+    @AfterEach
+    void teardown() {
+        driver.quit();
+    }
+
 }

@@ -102,8 +102,13 @@ public class RegistrationTest {
         assertEquals("http://192.168.88.182/registration", driver.getCurrentUrl());
 
 
-
     }
 
+    @AfterEach
+    void tearDown() {
+
+        driver.quit();
+    }
 }
+
 

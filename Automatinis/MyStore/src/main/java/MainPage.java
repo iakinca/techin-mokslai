@@ -15,5 +15,5 @@ public class MainPage extends BasePage {
     public void clickLogin() {
         buttonSignIn.click();
     }
-}
+
 

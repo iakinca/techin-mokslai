@@ -38,6 +38,8 @@ public class RegistrationTest extends BaseTest {
         informationPage.clickIdentityLink();
         assertEquals("Diana",informationPage.getUserFirstName());
         assertEquals("Daigera",informationPage.getUserLastName());
-        assertEquals(emailn,informationPage.getUserEmail());
+        assertEquals(emailn
+
+                ,informationPage.getUserEmail());
     }
 }

@@ -8,22 +8,18 @@ import java.time.Duration;
 public class BaseTest {
     WebDriver driver;
 
-    String firstName = "Diana";
-    String lastName = "Daigera";
-    String emailn = "testuser" + System.currentTimeMillis() + "@gmail.com";
-    String password = "Test1234@Test";
-
     @BeforeEach
     void setup() {
         driver = new ChromeDriver();
-        driver.get("http://192.168.90.109/");
+        driver.get("https://testpages.herokuapp.com/styled/calculator");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
     }
 
-    @AfterEach
-    void teardown() {
-        driver.quit();
+//    @AfterEach
+//    void teardown() {
+//        driver.quit();
     }
-}
+
+

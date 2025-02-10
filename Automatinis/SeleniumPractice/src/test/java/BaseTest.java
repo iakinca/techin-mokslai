@@ -6,15 +6,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class BaseTest {
+
     WebDriver driver;
 
     @BeforeEach
     void setup() {
         driver = new ChromeDriver();
-        driver.get("https://testpages.herokuapp.com/styled/calculator");
+        driver.get("https://www.tutorialspoint.com/selenium/practice/selenium_automation_practice.php");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
     }
 
     @AfterEach
@@ -22,4 +22,3 @@ public class BaseTest {
         driver.quit();
     }
 }
-

@@ -5,18 +5,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class LoginTest {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class LoginTest extends BaseTest {
 
     @Test
-    void Login() {
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    void orangeLogin() {
 
-        driver.findElement(By.cssSelector("input[name='username']")).sendKeys("Admin");
-        driver.findElement(By.cssSelector("input[name='password']")).sendKeys("admin123");
-        driver.findElement(By.cssSelector(".orangehrm-login-button")).click();
+        LoginPage loginPage = new LoginPage(driver);
+
+        String username = loginPage.getUsername();
+        System.out.println(loginPage.getUsername());
+        loginPage.enterUser(username);
+
+        String password = loginPage.getPassword();
+        System.out.println(loginPage.getPassword());
+        loginPage.enterPassword(password);
+
+        loginPage.clickLoginButton();
+
+        assertEquals("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index", driver.getCurrentUrl());
+
 
     }
 

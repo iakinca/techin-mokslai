@@ -17,8 +17,8 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-//    @AfterEach
-//    void teardown() {
-//        driver.quit();
-//    }
+    @AfterEach
+    void teardown() {
+        driver.quit();
+    }
 }

@@ -97,11 +97,11 @@ public class SeleniumTest {
 
     }
 
-    @AfterEach
-    void tearDown() {
-        driver.quit();
+//    @AfterEach
+//    void tearDown() {
+//        driver.quit();
     }
-}
+
 
 
 

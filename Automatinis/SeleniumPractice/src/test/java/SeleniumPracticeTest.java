@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
-public class SeleniumPracticeTest extends BaseTest {
+public class
+SeleniumPracticeTest extends BaseTest {
 
     @Test
     public void practiceTest() {

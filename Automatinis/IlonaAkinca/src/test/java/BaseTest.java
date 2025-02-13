@@ -10,7 +10,7 @@ public class BaseTest {
     @BeforeEach
     void setup() {
         driver = new ChromeDriver();
-        driver.get("http://192.168.89.174/");
+        driver.get("http://192.168.90.46/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }

@@ -5,12 +5,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class BaseTest {
+
     WebDriver driver;
 
     @BeforeEach
     void setup() {
         driver = new ChromeDriver();
-        driver.get("");
+        driver.get("https://demo.litecart.net/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
